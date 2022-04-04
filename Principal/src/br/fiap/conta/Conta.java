@@ -22,7 +22,7 @@ public class Conta {
 
 	public void Sacar(double valor) {
 		if (valor > saldo) {
-			System.out.println("Erro patrão");
+			System.out.println("Erro!");
 		} else {
 			this.saldo -= valor;
 		}
@@ -32,7 +32,7 @@ public class Conta {
 		if (!(valor < 0)) {
 			this.saldo += valor;
 		} else {
-			System.out.println("Quer depositar oq til?");
+			System.out.println("Erro!");
 		}
 
 	}
